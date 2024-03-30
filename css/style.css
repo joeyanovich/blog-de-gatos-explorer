@@ -27,8 +27,17 @@ body {
 .catblog {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+  grid-template-areas:
+  "header header header"
+  "main main aside"
+  "footer footer footer";
   height: 100vh;
 }
+
+header { grid-area: header;}
+main { grid-area: main;}
+aside { grid-area: aside;}
+footer { grid-area: footer;}
 
 .container {
   max-width: 80rem;
@@ -96,6 +105,24 @@ header .container form {
   cursor: pointer;
 
   border-radius: 50%;
+}
+
+main {
+  /* padding: 1rem 2rem 1rem calc((100vw - 80rem) / 2); */
+  padding-left: calc((100vw - 80rem) / 2);
+}
+
+aside {
+  padding-right: calc((100vw - 76rem) / 2);
+}
+.main {
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: red;
+}
+
+.aside {
+  padding: 1rem 2rem 1rem 1rem;
+  background-color: green;
 }
 
 footer {
