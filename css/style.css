@@ -1,0 +1,19 @@
+:root {
+  --blue-700: #065E7C;
+  --blue-500: #387E96;
+  --gray-900: #121214;
+  --gray-800: #202024;
+  --white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, input {
+  font-family: 'Mulish', sans-serif;
+}
