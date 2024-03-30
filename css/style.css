@@ -1,8 +1,9 @@
 :root {
-  --blue-700: #065E7C;
   --blue-500: #387E96;
-  --gray-900: #121214;
+  --blue-700: #065E7C;
+  --gray-100: #F4FCFF;
   --gray-800: #202024;
+  --gray-900: #121214;
   --white: #FFF;
 }
 
@@ -16,4 +17,26 @@
 
 body, input {
   font-family: 'Mulish', sans-serif;
+}
+
+body {
+  color: var(--gray-900);
+  background-color: var(--gray-100);
+}
+
+.catblog > * {
+  border: 1px solid red;
+}
+
+.catblog {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
