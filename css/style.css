@@ -144,7 +144,6 @@ main {
   padding-bottom: 2.75rem;
 
   overflow-y: scroll;
-  background-color: red;
 }
 
 main {
@@ -265,7 +264,7 @@ aside {
   /* max-height:5.25rem; */
 
   cursor: pointer;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   /* background-color: red; */
 }
@@ -316,21 +315,26 @@ footer p {
 
 @media (max-width: 1140px) {
   .post h3 {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
+    /* margin-top: 0; */
   }
   
   .post p {
-    font-size: 0.625rem;
+    /* font-size: 0.625rem; */
   }
 }
 
-/* @media (max-width: 950px) {
-  .catblog {
-    grid-template-rows: max-content 1fr 1fr max-content;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "aside aside aside"
-    "footer footer footer";
+@media (max-width: 850px) {
+  .main-content {
+    flex-direction: column;
+    gap: 5rem;
   }
-} */
+}
+
+@media (max-width: 560px) {
+  .post-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
